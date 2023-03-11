@@ -27,7 +27,7 @@
             default: [],
         }
     },
-    { timestapms: true }
+    { timestamps: true }
  );
 
  const Post = mongoose.model("Post", postSchema);
