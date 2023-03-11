@@ -1,7 +1,7 @@
-import User from "../models/User";
+import User from "../models/User.js";
 
 /* READ */
-export const getUSer = async (req, res) => {
+export const getUser = async (req, res) => {
     try {
         const { id } = req.params;
         const user = await User.findById(id);
@@ -33,7 +33,7 @@ export const getUserFriends = async (req, res) => {
 }
 
 /* UPDATE */
-export const addRemoveFirend = async (res, req) => {
+export const addRemoveFriend = async (res, req) => {
     try{
         const { id, friendId } = req.params;
         const user = await User.findById(id);
